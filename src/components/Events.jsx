@@ -23,52 +23,53 @@ import './event.css';
 
 const Events = () => {
 
-    const tableHead = ["Дата", "Место", "кабель"];
-    const tableEvent = ["оператор", "система", "кабель"];
+    const tableHead = ["Дата", "Место", "Кабель"];
+    const tableEvent = ["Оператор", "Система", "Кабель"];
 
     return (
         <>
             <Header />
                 <Container maxWidth="xl" >
                     <Typography variant="h5" sx={{mt: 3}}>События</Typography>
+                    
                     <div className="container_event">
-                        <Paper className="tiket_alarm" elevation={8}>
-                            <PriorityHighIcon fontSize="large" />
-                        </Paper>
-                        <Card>
-                            <CardContent>
-                                <CardHeader></CardHeader>
-
-                                <Typography
-                                    sx={{ mb: 1.5, marginTop: "10px" }}
-                                    color="text.secondary"
-                                >
-                                    Всего уведомлений: <b>15</b>
-                                </Typography>
-                                <Divider />
-                                <TableContainer>
-                                    <TableHead sx={{ background: "#f5f2f2" }}>
-
-
-                                        {tableHead.map((row) => (
-                                            <TableCell>{row}</TableCell>
-                                        ))}
-                                    </TableHead>
-
-                                    {alarm.map((row) => (
-                                        <TableRow>
-                                            <TableCell>{row.data}</TableCell>
-                                            <TableCell>{row.loc}</TableCell>
-                                            <TableCell>{row.place}</TableCell>
-                                        </TableRow>
-                                    ))}
-                                </TableContainer>
-                            </CardContent>
-                        </Card>
-
                         <>
                             <Card>
+                                <Paper className="tiket_alarm" elevation={8}>
+                                    <PriorityHighIcon fontSize="large" />
+                                </Paper>
+                                <CardContent>
+                                    <CardHeader></CardHeader>
 
+                                    <Typography
+                                        sx={{ mb: 1.5, marginTop: "10px" }}
+                                        color="text.secondary"
+                                    >
+                                        Всего уведомлений: <b>6</b>
+                                    </Typography>
+                                    <Divider />
+                                    <TableContainer>
+                                        <TableHead sx={{ background: "#f5f2f2" }}>
+
+
+                                            {tableHead.map((row) => (
+                                                <TableCell>{row}</TableCell>
+                                            ))}
+                                        </TableHead>
+
+                                        {alarm.map((row) => (
+                                            <TableRow>
+                                                <TableCell>{row.data}</TableCell>
+                                                <TableCell>{row.loc}</TableCell>
+                                                <TableCell>{row.place}</TableCell>
+                                            </TableRow>
+                                        ))}
+                                    </TableContainer>
+                                </CardContent>
+                            </Card>
+                        </>
+                        <>
+                            <Card>
                                 <Paper className="tiket_warining" elevation={8}>
                                     <WarningAmberIcon fontSize="large" />
                                 </Paper>
@@ -78,7 +79,7 @@ const Events = () => {
                                         sx={{ mb: 1.5, marginTop: "10px" }}
                                         color="text.secondary"
                                     >
-                                        Всего уведомлений: <b>22</b>
+                                        Всего уведомлений: <b>3</b>
                                     </Typography>
                                     <Divider />
                                     <TableContainer>
@@ -110,7 +111,7 @@ const Events = () => {
                                         sx={{ mb: 1.5, marginTop: "10px" }}
                                         color="text.secondary"
                                     >
-                                        Всего уведомлений: <b>55</b>
+                                        Всего уведомлений: <b>5</b>
                                     </Typography>
                                     <Divider />
                                     <TableContainer>
