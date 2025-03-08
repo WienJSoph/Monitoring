@@ -2,26 +2,36 @@
     {
         "data": "Rostelecom",
         "loc": "DWDM",
-        "place": "3"
+        "place": "TS-10-2",
+        "level": "major",
+        "dsc": "Повышение температуры"
     },
     {
         "data": "Rostelecom",
         "loc": "DWDM",
-        "place": "1"
+        "place": "MS-2S-21E",
+        "level": "major",
+        "dsc": "Придумать!!!!"
     },
     {
         "data": "Rostelecom",
         "loc": "DWDM",
-        "place": "2"
-    },
-    {
-        "data": "Rostelecom",
-        "loc": "",
-        "place": "8"
+        "place": "2",
+        "level": "major",
+        "dsc": "Придумать!!!!"
     },
     {
         "data": "Rostelecom",
         "loc": "DWDM",
-        "place": "6"
+        "place": "TQ-3FS",
+        "level": "minor",
+        "dsc": "Придумать!!!!"
+    },
+    {
+        "data": "Rostelecom",
+        "loc": "DWDM T8",
+        "place": "MD-D3ES-S3/D1",
+        "level": "minor",
+        "dsc": "Придумать!!!!"
     }
 ]

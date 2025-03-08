@@ -20,8 +20,8 @@ const Map = () => {
     const position = [55.021531, 82.924505];
     const locations = [
         {
-            title: "Location 1",
-            description: "Филармония.",
+            title: "УД 3202/12",
+            description: "Contrary to popular belief, Lorem Ipsum is not simply random text. ",
             coordinates: [55.021531, 82.924505],
         },
         {
@@ -57,7 +57,12 @@ const Map = () => {
 
                     {locations.map((marker, index) => (
                         <Marker key={index} position={marker.coordinates}>
-                            <Popup>{marker.description}</Popup>
+                            <Popup>
+                            <h3>{marker.title}</h3>
+                            {marker.description}
+                            <hr/>
+                            {marker.description}
+                            </Popup>
                         </Marker>
                     ))}
                 </MapContainer>

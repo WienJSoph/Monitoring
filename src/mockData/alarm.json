@@ -1,28 +1,29 @@
 [
     {
         "data": "12.04.25",
-        "loc": "Узел 2",
-        "place": "1"
+        "loc": "УД 1294/123",
+        "place": "DWDM T8 V3",
+        "msg": "LOF"
     },
     {
         "data": "29.05.25",
         "loc": "Узел 4",
-        "place": "5"
+        "place": "BDI"
     },
     {
         "data": "06.05.25",
         "loc": "Узел 1",
-        "place": "3"
+        "place": "LOS, AIS"
     },
     {
         "data": "13.05.25",
         "loc": "Узел 3",
-        "place": "4"
+        "place": "BEI, BDI"
     },
     {
         "data": "09.05.25",
         "loc": "Узел 1",
-        "place": "3"
+        "place": "ODU-BDI, ODU-BEI, AIS"
     },
     {
         "data": "11.05.25",

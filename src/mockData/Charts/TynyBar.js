@@ -1,18 +1,18 @@
 export const data = [
     {
-      name: 'Page A',
+      name: 'янв',
       uv: 4000,
       pv: 2400,
       amt: 2400,
     },
     {
-      name: 'Page B',
+      name: 'фев',
       uv: 3000,
       pv: 1398,
       amt: 2210,
     },
     {
-      name: 'Page C',
+      name: 'март',
       uv: 2000,
       pv: 9800,
       amt: 2290,

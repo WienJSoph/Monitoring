@@ -20,11 +20,17 @@ import alarm from '../mockData/alarm.json';
 import warning from '../mockData/warning.json';
 import Header from "../pages/Header";
 import './event.css';
+import EventsNote from "./EventTables/EventsNote";
 
 const Events = () => {
 
-    const tableHead = ["Дата", "Место", "Кабель"];
-    const tableEvent = ["Оператор", "Система", "Кабель"];
+    const tableEvent = ["Оператор", "Система", "Плата", "Код ошибки"];
+    // Сделать Три хедера для каждой из таблиц
+    //Сгенерировать 20-30 описаний для каждого из типов уведомлений
+    const tableHead = ["Дата", "Место", "Кабель", "Волокно"];
+
+    const tableHeadAlarm = ["Дата", "Место", "Кабель", "Волокно"];
+    const tableHeadNote = ["Дата", "Место", "Кабель", "Волокно"];
 
     return (
         <>
@@ -94,6 +100,7 @@ const Events = () => {
                                                 <TableCell>{row.data}</TableCell>
                                                 <TableCell>{row.loc}</TableCell>
                                                 <TableCell>{row.place}</TableCell>
+                                                <TableCell>{row.fiber}</TableCell>
                                             </TableRow>
                                         ))}
                                     </TableContainer>
@@ -101,35 +108,7 @@ const Events = () => {
                             </Card>
                         </>
                         <>
-                            <Card>
-                                <Paper className="tiket_note" elevation={8}>
-                                    <NotificationsNoneIcon fontSize="large" />
-                                </Paper>
-                                <CardContent>
-                                    <CardHeader></CardHeader>
-                                    <Typography
-                                        sx={{ mb: 1.5, marginTop: "10px" }}
-                                        color="text.secondary"
-                                    >
-                                        Всего уведомлений: <b>5</b>
-                                    </Typography>
-                                    <Divider />
-                                    <TableContainer>
-                                        <TableHead sx={{ background: "#f5f2f2" }}>
-                                            {tableEvent.map((row) => (
-                                                <TableCell>{row}</TableCell>
-                                            ))}
-                                        </TableHead>
-                                        {note.map((row) => (
-                                            <TableRow>
-                                                <TableCell>{row.data}</TableCell>
-                                                <TableCell>{row.loc}</TableCell>
-                                                <TableCell>{row.place}</TableCell>
-                                            </TableRow>
-                                        ))}
-                                    </TableContainer>
-                                </CardContent>
-                            </Card>
+                            <EventsNote />
                         </>
                     </div>
                     <div style={{ height: '50px' }}>
