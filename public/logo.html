@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="/bitrix/cache/css/s1/new_portal/kernel_main/kernel_main.css?161545545953744" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/new_portal/kernel_intranet/kernel_intranet.css?158501949539297" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/new_portal/kernel_altasib.up/kernel_altasib.up.css?1585019495558" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/new_portal/template_a6feb0626fa0425c80311bedb671721d/template_a6feb0626fa0425c80311bedb671721d.css?1717130782403" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'25200','SITE_ID':'s1','USER_ID':'','SERVER_TIME':'1740814815','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'23b8ef96e0c9bdf6d8a40ee38f25c38b'});</script>
+
+
+<script type="text/javascript" src="/bitrix/cache/js/s1/new_portal/kernel_main/kernel_main.js?1649838535444274"></script>
+<script type="text/javascript" src="/bitrix/cache/js/s1/new_portal/kernel_altasib.up/kernel_altasib.up.js?15850194954153"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js?149533015597612','/bitrix/js/main/core/core_ajax.js?149533015535278','/bitrix/js/main/json/json2.min.js?14953301553467','/bitrix/js/main/core/core_ls.js?149533015510330','/bitrix/js/main/session.js?14953301493170','/bitrix/js/main/core/core_window.js?149533015596525','/bitrix/js/main/utils.js?149533014930972','/bitrix/js/main/core/core_fx.js?149533015516537','/bitrix/js/main/core/core_popup.js?149533015539406','/bitrix/js/main/core/core_tooltip.js?149533015513098','/bitrix/js/main/core/core_date.js?149533015553207','/bitrix/js/main/rating_like.js?14953301499814','/bitrix/js/main/core/core_dd.js?14953301553604','/bitrix/js/main/dd.js?149533014914243','/bitrix/js/main/core/core_timer.js?14953301556494','/bitrix/js/main/core/core_autosave.js?14953301558963','/bitrix/js/altasib.up/script.js?14953301424056']); </script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css?14953301585336','/bitrix/js/main/core/css/core_popup.css?149533015928664','/bitrix/js/main/core/css/core_tooltip.css?14953301586696','/bitrix/js/main/core/css/core_date.css?149533015910189','/bitrix/js/intranet/intranet-common.css?149533014639046','/bitrix/js/altasib.up/style.css?1495330142463','/bitrix/templates/new_portal/styles.css?171713077594','/bitrix/templates/new_portal/template_styles.css?158322215069']); </script>
+<script>altasib_up_button='/bitrix/js/altasib/up/images/button/altasib_up1.gif'; altasib_up_pos ='3';altasib_up_pos_xy = '40'</script>
+
+
+
+<script type="text/javascript">
+bxSession.Expand(1440, '23b8ef96e0c9bdf6d8a40ee38f25c38b', false, '32e2a61333cada5b130b6d05687d581e');
+</script>
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta itemprop="image" content="/bitrix/templates/new_portal/images/touch.png">
+	<meta property="og:image" content="/bitrix/templates/new_portal/images/logotip_sibguti.png" />
+	<link rel="apple-touch-icon" href="/bitrix/templates/new_portal/images/touch.png"/>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4 -->
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Select 2 -->
+    <!-- Carousel -->
+    <script>
+        $(document).ready(() => {
+            $('.carousel').carousel({
+                interval: 7000
+            })
+        })
+    </script>
+    <!-- Carousel -->
+        
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/bitrix/templates/new_portal/css/styles_impaired.css" />
+    <link rel="stylesheet" type="text/css" href="/bitrix/templates/new_portal//mdl/material.min.css" />
+	<link rel="stylesheet" type="text/css" href="/bitrix/templates/new_portal//mdl/theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="/bitrix/templates/new_portal//mdl/mdl-selectfield.min.css" />
+	<link rel="stylesheet" type="text/css" href="/bitrix/templates/new_portal//mdl/mdl-jquery-modal-dialog.css" />
+    <link rel="stylesheet" href="/bitrix/templates/new_portal/css/main.css">
+    <link rel="stylesheet" href="/bitrix/templates/new_portal/css/main_old.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.js" integrity="sha256-n1NOdiGoZ+8Q9WoJSppowEhFCPZpkvS72N1b8C1qMiU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/bitrix/templates/new_portal/js/main.js"></script>
+	<script type="text/javascript" src="/bitrix/templates/new_portal/js/impaired.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/new_portal/js/jquery.waypoints.min.js"></script>
+    
+	<script type="text/javascript" src="/bitrix/templates/new_portal//mdl/material.min.js"></script>
+	<script type="text/javascript" src="/bitrix/templates/new_portal//mdl/mdl-selectfield.min.js"></script>
+	<script type="text/javascript" src="/bitrix/templates/new_portal//mdl/mdl-jquery-modal-dialog.js"></script>   
+    <title>Сибирский государственный университет телекоммуникаций и информатики</title>
+</head>
+<body>
+        <div id="panel">
+			</div>
+    <div id="CecutientWrapper">
+        <div id="CecutientBlock" class="container">
+            Версия для слабовидящих:
+            <a id="CecutientOn" tabindex="0" title="Выключить версию для слабовидящих">Вкл</a>
+            <a id="CecutientOff" tabindex="0" title="Включить версию для слабовидящих">Выкл</a>
+            Изображения:
+            <a id="ImageOn" tabindex="0" title="Включить изображения">Вкл</a>
+            <a id="ImageOff" tabindex="0" title="Выключить изображения">Выкл</a>
+            Размер шрифта: 
+            <a id="SmallFonts" tabindex="0" title="Мелкий шрифт">A</a>
+            <a id="MediumFonts" tabindex="0" title="Средний шрифт">A</a>
+            <a id="BigFonts" tabindex="0" title="Крупный шрифт">A</a>
+            Цветовая схема:
+            <a id="WhiteStyle" tabindex="0" title="Белая цветовая схема">A</a>
+            <a id="BlackStyle" tabindex="0" title="Черная цветовая схема">A</a>
+            <a id="BlueStyle" tabindex="0" title="Синяя цветовая схема">A</a>
+            <a id="GreenStyle" tabindex="0" title="Зеленая цветовая схема">A</a>
+        </div>
+    </div>
+        <div id="layout" class="">
+    <header class="container">
+        <div class="burger_button">
+            <a class="burger" id="burger" href="javascript:void(0)">
+                <span class="burger-row"></span>
+                <span class="burger-row"></span>
+                <span class="burger-row"></span>
+            </a>
+        </div>
+        <a class="logo" href="/">
+            <!-- <img src="/bitrix/templates/new_portal/images/logo_sibsutis.svg"/> -->
+        </a>
+        
+    <nav class="main_menu">
+                    <a class="main_menu-item " href="/abitur/">
+                Абитуриентам            </a>
+                    <a class="main_menu-item " href="/students/">
+                Студентам            </a>
+                    <a class="main_menu-item " href="/staff/">
+                Сотрудникам            </a>
+            </nav>
+        <a class="telecommunication" href="https://digital.gov.ru/ru/" target="_blank">
+            <img src="/bitrix/templates/new_portal/images/min.svg"/>
+        </a>
+        <!-- <a class="telecommunication" href="https://rossvyaz.ru" target="_blank">
+            <img src="/bitrix/templates/new_portal/images/gerb_gold.svg"/>
+            <span>Федеральное агенство связи (Россвязь)</span>
+        </a> -->
+        <nav class="auth_menu">
+            <div class="auth_menu-item search">
+                <a class="auth_menu__search" href="javascript:void(0)">
+                    <img src="/bitrix/templates/new_portal/images/Search.svg"/>
+                </a>
+                <form class="auth_menu__search-form" action="/search/" method="GET">
+                    <input name="q" type="text" class="auth_menu__search-form__input" autocomplete="off" placeholder="Поиск..."/>
+                    <button type="submit">
+                        <img src="/bitrix/templates/new_portal/images/Search.svg">
+                    </button>
+                </form>
+            </div>
+            <nav class="auth_menu__service">
+                <a class="auth_menu__service-item" href="javascript:void(0)" id="CecutientBtn" title="Версия для слабовидящих" alt="Версия для слабовидящих">
+                    <img src="/bitrix/templates/new_portal/images/glass_2.svg"/>
+                </a>
+                <a class="auth_menu__service-item" href="/en/">
+                    EN
+                </a>
+                <a class="auth_menu__service-item" href="/">
+                    РУС
+                </a>
+            </nav>
+            <a class="auth_menu-item" id="auth" href="/auth/?backurl=https://sibsutis.ru/">
+                <img src="/bitrix/templates/new_portal/images/avatar_1.svg"/>
+            </a>
+            <div class="auth_menu-item infosign">
+                12 +
+            </div>
+        </nav>
+            </header><div id="comp_b084eb425f88ef57bee693951d5f6185"><script type="text/javascript" src="/bitrix/templates/new_portal/js/slider-timer.js"></script>
+<section class="slider">
+    <div id="caruoselMainPage" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+                                                                                                            <a class="carousel-item active" href="/abitur/olimpiada-shkolnikov.php">
+                        <div class="carousel-item__title">
+                        
+                                                                                                            </div>
+                                                    <img class="d-block" src="/upload/iblock/e22/Олимпиада школьников Гранит науки.jpg" alt="Гранит науки" style="pointer-events: none">
+                                            </a>
+                                                                                                                            <a class="carousel-item " href="https://sibsutis.ru/science/natsionalnyy-proekt-nauka-i-universitety/">
+                        <div class="carousel-item__title">
+                        
+                                                                                                            </div>
+                                                    <img class="d-block" src="/upload/iblock/ad0/Наука (На Сайт).png" alt="Наука и университеты" style="pointer-events: none">
+                                            </a>
+                                                                                                                            <a class="carousel-item " href="work-univer/talent-pool/">
+                        <div class="carousel-item__title">
+                        
+                                                                                                            </div>
+                                                    <img class="d-block" src="/upload/iblock/1f2/шапка на сайт Центра карьеры.jpg" alt="Центр карьеры" style="pointer-events: none">
+                                            </a>
+                                                                                <a class="carousel-item " href="https://sibsutis.ru/graduates/">
+                        <div class="carousel-item__title">
+                        
+                                                                                                            </div>
+                                                    <img class="d-block" src="/upload/iblock/c8e/1 3.png" alt="graduates" style="pointer-events: none">
+                                            </a>
+                                                                                <a class="carousel-item " href="https://sibsutis.ru/institutes/idistance/">
+                        <div class="carousel-item__title">
+                        
+                                                                                                            </div>
+                                                    <img class="d-block" src="/upload/iblock/35b/Информация для студентов Института заочного образования.jpg" alt="Информация для студентов заочного факультета" style="pointer-events: none">
+                                            </a>
+                                    </div>
+                    <a class="carousel-control-prev" href="#caruoselMainPage" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#caruoselMainPage" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+    <div class="menu-block">
+        
+    <nav class="container menu">
+                                    <a href="/about/" class="menu__item " onmouseover="showSubMenu(this)" data="university">
+                    Университет                </a>
+                                                <a href="/sveden/" class="menu__item " onmouseover="showSubMenu(this)" data="sveden">
+                    Сведения об образовательной организации                </a>
+                                                                    <nav class="container menu__item-sub" onmouseleave="hideSubMenu(this)" data-target="sveden">
+                                        <a href="/graduates/" class="menu__item-sub__item ">
+                            Выпускникам                        </a>
+                                                                                        <a href="/employers/" class="menu__item-sub__item ">
+                            Работодателям                        </a>
+                                    </nav>
+                                                                <a href="/education/" class="menu__item " onmouseover="showSubMenu(this)" data="faculties">
+                    Образование                </a>
+                                                <a href="https://sibsutis.ru/science/novosti.php" class="menu__item " onmouseover="showSubMenu(this)" data="science">
+                    Наука и инновации                </a>
+                                                <a href="/priority2030/" class="menu__item " onmouseover="showSubMenu(this)" data="">
+                    Приоритет 2030                </a>
+                                                <a href="/about/contacts/" class="menu__item " onmouseover="showSubMenu(this)" data="contacts">
+                    Контакты                </a>
+                                                                    <nav class="container menu__item-sub" onmouseleave="hideSubMenu(this)" data-target="contacts">
+                                        <a href="/education/collegenbranches/" class="menu__item-sub__item ">
+                            Колледж и филиалы                        </a>
+                                    </nav>
+                                        </nav>
+    </div>
+</section>
+
+<style>
+    .timer__item{
+        display: flex;
+        font-size: 2em;
+        line-height: 1.2;
+        font-weight: 600;
+        gap: 45px;
+        color: #ffffff;
+        padding-left: 12px;
+        padding-top: 35px;
+    }
+
+    .slider_timer,
+    .slider_timer.GRADIENT_LEFT{
+        display: grid;
+        grid-gap: 10px;
+        color: #ffffff;
+        position: absolute;
+        left: 21%;
+    }
+
+    .slider_timer.WHITE_RIGHT,
+    .slider_timer.BLUE_RIGHT{
+        left: 66%;
+        top: auto;
+    }
+
+    .slider_timer.WHITE_RIGHT .timer__item-peace{
+        color: #ffffff!important;
+    }
+
+    .slider_timer.BLUE_RIGHT .timer__item-peace{
+        color: #00ccff!important;
+    }
+
+    @media( max-width: 524px ){
+        .slider_timer,
+        .slider_timer.GRADIENT_LEFT{
+            position: relative;
+            left: 13%;
+            display: flex;
+            justify-self: start;
+            width: 100%;
+        }
+
+        .slider_timer.WHITE_RIGHT,
+        .slider_timer.BLUE_RIGHT{
+            left: 66%;
+            top: -10%;
+        }
+    }
+
+    @media( max-width: 424px ){
+        .slider_timer.WHITE_RIGHT,
+        .slider_timer.BLUE_RIGHT{
+            left: 66%;
+            top: auto;
+        }
+    }
+
+    @media( max-width: 400px ){
+        .slider_timer,
+        .slider_timer.GRADIENT_LEFT{
+            left: 12%;
+        }
+    }
+
+    @media( max-width: 360px ){
+        .slider_timer,
+        .slider_timer.GRADIENT_LEFT{
+            left: 8%;
+        }
+    }
+
+    @media( max-width: 1199px ){
+        .slider_timer .timer__item,
+        .slider_timer.GRADIENT_LEFT .timer__item{
+            gap: 20px;
+        }
+    }
+
+    @media( max-width: 767px ){
+        .slider_timer .timer__item,
+        .slider_timer.GRADIENT_LEFT .timer__item{
+            font-size: 1.2em;
+            gap: 10px;
+            padding-top: 0;
+        }
+    }
+
+    @media( max-width: 424px ){
+        .slider_timer .timer__item,
+        .slider_timer.GRADIENT_LEFT .timer__item{
+            padding-top: 10px;
+            padding-left: 5px;
+        }
+    }
+
+    .slider_timer .timer__item br,
+    .slider_timer.GRADIENT_LEFT .timer__item br{
+        display: none;
+    }
+
+    .slider_timer .timer__item-peace,
+    .slider_timer.GRADIENT_LEFT .timer__item-peace{
+        display: grid;
+        justify-content: start;
+    }
+
+    .slider_timer .timer__item-peace:nth-child(1),
+    .slider_timer.GRADIENT_LEFT .timer__item-peace:nth-child(1){
+        color: #00ccff;
+    }
+
+    .slider_timer .timer__item-peace:nth-child(3),
+    .slider_timer.GRADIENT_LEFT .timer__item-peace:nth-child(3){
+        color: #349aff;
+    }
+
+    .slider_timer .timer__item-peace:nth-child(5),
+    .slider_timer.GRADIENT_LEFT .timer__item-peace:nth-child(5){
+        color: #b791ff;
+    }
+
+    .slider_timer .timer__item-peace .desc,
+    .slider_timer.GRADIENT_LEFT .timer__item-peace .desc{
+        font-size: 0.3em;
+        line-height: 0;
+    }
+
+    @media( max-width: 1199px ){
+        .slider_timer .timer__item br,
+        .slider_timer.GRADIENT_LEFT .timer__item br{
+            display: none;
+        }
+    }
+</style></div>    <section class="container events mob">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                                    <div class="events__item carousel-item active">
+                                                <a href="/announcement/"><img alt="" title="" src="/upload/rk/c30/Анонсы мероприятий.png" width="350" height="180" style="border:0;" /></a>                    </div>
+                                    <div class="events__item carousel-item ">
+                                                <a href="https://sibsutis.ru/work-univer/"><img alt="" title="" src="/upload/rk/b1b/Работа_ 1.png" width="350" height="180" style="border:0;" /></a>                    </div>
+                                    <div class="events__item carousel-item ">
+                                                <a href="https://sibsutis.ru/students/schedule/"><img alt="" title="" src="/upload/rk/737/Расписание 2.jpg" width="350" height="180" style="border:0;" /></a>                    </div>
+                            </div>
+        </div>
+        
+    </section>
+    <section class="container events">
+                    <div class="events__item mb-2">
+                                <a href="/announcement/"><img alt="" title="" src="/upload/rk/c30/Анонсы мероприятий.png" width="350" height="180" style="border:0;" /></a>            </div>
+                    <div class="events__item mb-2">
+                                <a href="https://sibsutis.ru/work-univer/"><img alt="" title="" src="/upload/rk/b1b/Работа_ 1.png" width="350" height="180" style="border:0;" /></a>            </div>
+                    <div class="events__item mb-2">
+                                <a href="https://sibsutis.ru/students/schedule/"><img alt="" title="" src="/upload/rk/737/Расписание 2.jpg" width="350" height="180" style="border:0;" /></a>            </div>
+              
+    </section>
+<div id="comp_741fa2ebbc6312eb45ce961d4099a6b5"> <section class="container news">
+	<div class="news__title">
+		Новости
+	</div>
+	<div class="news__list">
+							<a 			href="/news/5481493/" 
+			class="news__item white" 
+			id="bx_651765591_5481493"
+		>
+			<div class="news__item-date">
+				28.02.2025			</div>
+			<div class="news__item-title">
+				Новостной дайджест СибГУТИ и филиалов			</div>
+			<div class="news__item-descr">
+				Выпуск от 28 февраля 2025			</div>
+							<img src="/upload/iblock/994/6lwWbIdvovU (24).jpg" alt="Новостной дайджест СибГУТИ и филиалов">
+					</a>
+							<a 			href="/news/5481464/" 
+			class="news__item white" 
+			id="bx_651765591_5481464"
+		>
+			<div class="news__item-date">
+				27.02.2025			</div>
+			<div class="news__item-title">
+				Специалисты СибГУТИ рассказали, как поступить в вуз на выставке в Красноярске			</div>
+			<div class="news__item-descr">
+				Стенд нашего университета посетили более 400 человек			</div>
+							<img src="/upload/iblock/89b/20250214_104600.jpg" alt="Специалисты СибГУТИ рассказали, как поступить в вуз на выставке в Красноярске">
+					</a>
+							<a 			href="/news/5481297/" 
+			class="news__item white" 
+			id="bx_651765591_5481297"
+		>
+			<div class="news__item-date">
+				26.02.2025			</div>
+			<div class="news__item-title">
+				Проректор по учебной и методической работе Надежда Кирилова в прямом эфире ОТС			</div>
+			<div class="news__item-descr">
+				26 февраля в 17:00			</div>
+							<img src="/upload/iblock/723/photo_2025-02-26_15-35-13.jpg" alt="Проректор по учебной и методической работе Надежда Кирилова в прямом эфире ОТС">
+					</a>
+							<a 			href="/news/5478179/" 
+			class="news__item white" 
+			id="bx_651765591_5478179"
+		>
+			<div class="news__item-date">
+				21.02.2025			</div>
+			<div class="news__item-title">
+				С Днем защитника Отечества, СибГУТИ!			</div>
+			<div class="news__item-descr">
+							</div>
+							<img src="/upload/iblock/99a/01-02-2024-ВУЦ-35.jpg" alt="С Днем защитника Отечества, СибГУТИ!">
+					</a>
+							<a 			href="/news/5478160/" 
+			class="news__item white" 
+			id="bx_651765591_5478160"
+		>
+			<div class="news__item-date">
+				21.02.2025			</div>
+			<div class="news__item-title">
+				В СибГУТИ стартовал марафон IT-профессий для школьников			</div>
+			<div class="news__item-descr">
+				Марафон проводится для учеников лицея №185, ранее СибГУТИ принял гостей из школы №109			</div>
+							<img src="/upload/iblock/f43/13-02-2025-Лицей-4.jpg" alt="В СибГУТИ стартовал марафон IT-профессий для школьников">
+					</a>
+							<a 			href="/news/5478144/" 
+			class="news__item white" 
+			id="bx_651765591_5478144"
+		>
+			<div class="news__item-date">
+				21.02.2025			</div>
+			<div class="news__item-title">
+				Новостной дайджест СибГУТИ и филиалов			</div>
+			<div class="news__item-descr">
+				Выпуск от 21 февраля 2025			</div>
+							<img src="/upload/iblock/d79/6lwWbIdvovU (23).jpg" alt="Новостной дайджест СибГУТИ и филиалов">
+					</a>
+							<a 			href="/news/5476659/" 
+			class="news__item white" 
+			id="bx_651765591_5476659"
+		>
+			<div class="news__item-date">
+				20.02.2025			</div>
+			<div class="news__item-title">
+				День открытых дверей в СибГУТИ посетили более 200 человек 			</div>
+			<div class="news__item-descr">
+							</div>
+							<img src="/upload/iblock/151/photo_2024-07-30_19-36-19.jpg" alt="День открытых дверей в СибГУТИ посетили более 200 человек ">
+					</a>
+							<a 			href="/news/5476203/" 
+			class="news__item white" 
+			id="bx_651765591_5476203"
+		>
+			<div class="news__item-date">
+				19.02.2025			</div>
+			<div class="news__item-title">
+				СибГУТИ открывает набор на весеннюю школу «Радиоканикулы»			</div>
+			<div class="news__item-descr">
+							</div>
+							<img src="/upload/iblock/78f/28-06-2024-Лет_шк_Посл_день-9064.jpg" alt="СибГУТИ открывает набор на весеннюю школу «Радиоканикулы»">
+					</a>
+							<a 			href="/news/5468868/" 
+			class="news__item white" 
+			id="bx_651765591_5468868"
+		>
+			<div class="news__item-date">
+				18.02.2025			</div>
+			<div class="news__item-title">
+				На научно-методической конференции в СибГУТИ обсудили тенденции развития образования			</div>
+			<div class="news__item-descr">
+				По итогам конференции будет опубликован сборник докладов, участники получат сертификаты			</div>
+							<img src="/upload/iblock/31b/13-02-2025-НМК-16.jpg" alt="На научно-методической конференции в СибГУТИ обсудили тенденции развития образования">
+					</a>
+			</div>
+	<a class="news__all" href="/news/">
+		Все новости
+	</a>
+</section></div>        <footer class="container">
+            <a class="logo" href="/">
+                <img src="/bitrix/templates/new_portal/images/logo_sibsutis.svg"/>
+            </a>
+            <div class="contacts">
+                <div class="contacts__phone">
+                    <div class="contacts__phone-title">
+	<div>
+		<p>
+ <b>Приёмная комиссия:</b> <a href="mailto:prikom@sibsutis.ru">prikom@sibsutis.ru</a>
+		</p>
+		<p>
+			 (383) 269-82-28&nbsp;<br>
+			 (383) 269-82-29&nbsp;
+		</p>
+		<p>
+ <b>Заочное дистанционное обучение<br>
+ </b><a href="https://do.sibsutis.ru/kak_postupit">https://do.sibsutis.ru/kak_postupit</a><br>
+ <a href="mailto:dist@sibguti.ru">dist@sibguti.ru</a>&nbsp;<br>
+			 (383)269-83-69
+		</p>
+		<p>
+			ул. Кирова, 86, к. 208.<br>
+		</p>
+		<p>
+ <b>Отдел договоров</b><br>
+			 (383)269-82-34
+		</p>
+	</div>
+	<div>
+		<p>
+ <br>
+		</p>
+	</div>
+</div>
+<div class="contacts__phone-email">
+</div>
+ <br>                </div>
+                <div class="contacts__phone">
+                    <div class="contacts__phone-email">
+	<p>
+ <span style="color: #666666;">Режим работы:</span>
+	</p>
+	<p>
+ <span style="color: #666666;">пн-чт – 10:00-16:00</span><br style="color: #666666;">
+ <span style="color: #666666;">пт – 10:00-15:00</span><br style="color: #666666;">
+ <span style="color: #666666;">сб, вс – выходной</span><br style="color: #666666;">
+ <span style="color: #666666;">Адрес: г. Новосибирск,</span><br style="color: #666666;">
+ <span style="color: #666666;">Гурьевская, 51, к.215</span><br style="color: #666666;">
+ <span style="color: #666666;">корпус №1 СибГУТИ</span><br>
+	</p>
+	<p style="background-image: initial; background-color: white;">
+	</p>
+</div>
+<!-- <div class="contacts__phone-email">
+    <a href="mailto:prikom@sibsutis.ru">prikom@sibsutis.ru</a>
+</div> -->                </div>
+                <div class="contacts__email">
+                    <div class="contacts__email-item" style="align-self: flex-start; padding-left:30px">
+	 Приёмная ректора:&nbsp;<a href="mailto:rectorat@sibsutis.ru">rectorat@sibsutis.ru</a>(383) 269-82-02<br>
+	<br>
+	 Администрация сайта:&nbsp;<a href="mailto:info@sibguti.ru">info@sibguti.ru</a><br>
+	 Техническая поддержка:&nbsp;<a href="mailto:support@sibsutis.ru">support@sibsutis.ru</a><br>
+ <br>
+ <a href="/search/map.php">Карта сайта</a><br>
+</div>
+ <br>                </div>
+                
+                
+            </div>
+            <div class="social">
+                
+
+<a href="https://vk.com/sibguti_info" class="social__item" rel="vk" target="_blank">
+    <img src="/bitrix/templates/new_portal/images/socialnet_vk.svg"/>
+</a>
+
+<a href="https://t.me/sibsutis_info" class="social__item" rel="tg" target="_blank">
+    <img src="/bitrix/templates/new_portal/images/socialnet_6.svg"/>
+</a>
+
+
+<a href="https://rutube.ru/channel/24250801/" class="social__item" rel="rutube" target="_blank">
+    <img class="rounded-circle" src="/bitrix/templates/new_portal/images/rutube.jpeg"/>
+</a>            </div>
+            <div class="address">
+                <div class="address__line">
+                    630102, г. Новосибирск, ул. Кирова, 86
+                </div>
+                <div class="address__map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae7521a03ec75061b9895754e00a54fd8ead3ae68960374d847029a4858e9eb6c&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae7521a03ec75061b9895754e00a54fd8ead3ae68960374d847029a4858e9eb6c&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script> -->
+                    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae7521a03ec75061b9895754e00a54fd8ead3ae68960374d847029a4858e9eb6c&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script> -->
+                </div>
+            </div>
+            <div class="info">
+                <div>Министерство цифрового развития, связи и массовых коммуникаций Российской Федерации</div>
+                <div>© 1999-2025 Сибирский государственный университет телекоммуникаций и информатики</div>
+            </div>
+        </footer>
+        <div class="burger-menu">
+            <div class="container">
+                <div class="burger-menu__list">
+                    <a href="javascript:void(0)" class="close">
+                        <img src="/bitrix/templates/new_portal/images/close.svg"/>
+                    </a>
+                    <a href="/" class="burger-menu__list-logo">
+
+                    </a>
+                    <!-- <a class="burger-menu__list-telecommunication" href="https://rossvyaz.ru" target="_blank">
+                        <img src="/bitrix/templates/new_portal/images/gerb.svg"/>
+                        <span>Федеральное агенство связи (Россвязь)</span>
+                    </a> -->
+                    <a href="/auth/?backurl=https://sibsutis.ru/" class="burger-menu__list-auth">
+                        <img src="/bitrix/templates/new_portal/images/avatar_2.svg"/>
+                                                    <span>Вход/Регистрация</span>
+                                            </a>
+                    
+    <nav class="main_menu">
+                <a class="main_menu-item " href="/abitur/">
+            Абитуриентам        </a>
+            <a class="main_menu-item " href="/students/">
+            Студентам        </a>
+            <a class="main_menu-item " href="/staff/">
+            Сотрудникам        </a>
+        </nav>
+                    
+    <nav class="sub_menu">
+                <a class="sub_menu__item " href="/about/">
+            Университет        </a>
+            <a class="sub_menu__item " href="/sveden/">
+            Сведения об образовательной организации        </a>
+            <a class="sub_menu__item " href="/education/">
+            Образование        </a>
+            <a class="sub_menu__item " href="https://sibsutis.ru/science/novosti.php">
+            Наука и инновации        </a>
+            <a class="sub_menu__item " href="/priority2030/">
+            Приоритет 2030        </a>
+            <a class="sub_menu__item " href="/about/contacts/">
+            Контакты        </a>
+        </nav>
+                    <div class="burger-menu__list-search">
+                        <form action="/search/" method="GET">
+                            <input type="text" name="q" autocomplete="off" placeholder="Поиск..."/>
+                            <button type="submit">
+                                <img src="/bitrix/templates/new_portal/images/Search_2.svg"/>
+                            </button>
+                        </form>
+                    </div>
+                    <a class="burger-menu__list-telecommunication" href="https://digital.gov.ru/ru/" target="_blank">
+                        <img src="/bitrix/templates/new_portal/images/min_white.svg"/>
+                        <span>
+                            Учредитель СибГУТИ
+                        </span>
+                    </a>
+                    <div class="contacts">
+                        <div class="contacts__phone">
+                            <div class="contacts__phone-title">
+	<div>
+		<p>
+ <b>Приёмная комиссия:</b> <a href="mailto:prikom@sibsutis.ru">prikom@sibsutis.ru</a>
+		</p>
+		<p>
+			 (383) 269-82-28&nbsp;<br>
+			 (383) 269-82-29&nbsp;
+		</p>
+		<p>
+ <b>Заочное дистанционное обучение<br>
+ </b><a href="https://do.sibsutis.ru/kak_postupit">https://do.sibsutis.ru/kak_postupit</a><br>
+ <a href="mailto:dist@sibguti.ru">dist@sibguti.ru</a>&nbsp;<br>
+			 (383)269-83-69
+		</p>
+		<p>
+			ул. Кирова, 86, к. 208.<br>
+		</p>
+		<p>
+ <b>Отдел договоров</b><br>
+			 (383)269-82-34
+		</p>
+	</div>
+	<div>
+		<p>
+ <br>
+		</p>
+	</div>
+</div>
+<div class="contacts__phone-email">
+</div>
+ <br>                        </div>
+                        
+                        <div class="contacts__email">
+                            <div class="contacts__email-item" style="align-self: flex-start; padding-left:30px">
+	 Приёмная ректора:&nbsp;<a href="mailto:rectorat@sibsutis.ru">rectorat@sibsutis.ru</a>(383) 269-82-02<br>
+	<br>
+	 Администрация сайта:&nbsp;<a href="mailto:info@sibguti.ru">info@sibguti.ru</a><br>
+	 Техническая поддержка:&nbsp;<a href="mailto:support@sibsutis.ru">support@sibsutis.ru</a><br>
+ <br>
+ <a href="/search/map.php">Карта сайта</a><br>
+</div>
+ <br>                        </div>
+                        <div class="contacts__phone">
+                            <div class="contacts__phone-email">
+	<p>
+ <span style="color: #666666;">Режим работы:</span>
+	</p>
+	<p>
+ <span style="color: #666666;">пн-чт – 10:00-16:00</span><br style="color: #666666;">
+ <span style="color: #666666;">пт – 10:00-15:00</span><br style="color: #666666;">
+ <span style="color: #666666;">сб, вс – выходной</span><br style="color: #666666;">
+ <span style="color: #666666;">Адрес: г. Новосибирск,</span><br style="color: #666666;">
+ <span style="color: #666666;">Гурьевская, 51, к.215</span><br style="color: #666666;">
+ <span style="color: #666666;">корпус №1 СибГУТИ</span><br>
+	</p>
+	<p style="background-image: initial; background-color: white;">
+	</p>
+</div>
+<!-- <div class="contacts__phone-email">
+    <a href="mailto:prikom@sibsutis.ru">prikom@sibsutis.ru</a>
+</div> -->                        </div>
+                        <div class="social">
+                            
+
+<a href="https://vk.com/sibguti_info" class="social__item" rel="vk" target="_blank">
+    <img src="/bitrix/templates/new_portal/images/socialnet_vk_1.svg"/>
+</a>
+
+<a href="https://t.me/sibsutis_info" class="social__item" rel="tg" target="_blank">
+    <img src="/bitrix/templates/new_portal/images/socialnet_6_1.svg"/>
+</a>
+
+
+<a href="https://rutube.ru/channel/24250801/" class="social__item" rel="rutube" target="_blank">
+    <img class="rounded-circle" src="/bitrix/templates/new_portal/images/rutube.jpeg"/>
+</a>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="up-button">
+    <img src="/bitrix/templates/new_portal/images/arrow-up-solid.svg"/>
+</button>
+        <!-- Yandex.Metrika counter -->
+    <div style="display:none;">
+        <script type="text/javascript">
+        (function(w, c) {
+        (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter7589581 = new Ya.Metrika({id:7589581, enableAll: true});
+        }
+            catch(e) { }
+        });
+        })(window, 'yandex_metrika_callbacks');
+        </script>
+    </div>
+    <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+
+    <noscript><div><img src="//mc.yandex.ru/watch/7589581" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21011124-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- /Google analytics -->
+    <!-- Rating@Mail.ru counter -->
+    <script type="text/javascript">
+    var _tmr = _tmr || [];
+    _tmr.push({id: "2659335", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+    if (d.getElementById(id)) return;
+    var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+    ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+    var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+    if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "topmailru-code");
+    </script><noscript><div style="position:absolute;left:-10000px;">
+    <img src="//top-fwz1.mail.ru/counter?id=2659335;js=na" style="border:0;" height="1" width="1" alt="Ðåéòèíã@Mail.ru" />
+    </div></noscript>
+    <!-- //Rating@Mail.ru counter -->
+</body>
+</html>

@@ -1,0 +1,57 @@
+[
+    {
+        "vendor": "Rostelekom",
+        "system": "",
+        "cable": "CABLE",
+        "fiber": 8,
+        "natt": 0.12,
+        "matt": 0.15,
+        "att": 0.13,
+        "event": 20,
+        "alarm": 40
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "DWDM",
+        "cable": "CABLE",
+        "fiber": 3,
+        "natt": 0.12,
+        "matt": 0.15,
+        "att": 0.13,
+        "event": 20,
+        "alarm": 40
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "DWDM",
+        "cable": "CABLE",
+        "fiber": 1,
+        "natt": 0.12,
+        "matt": 0.15,
+        "att": 0.13,
+        "event": 20,
+        "alarm": 40
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "DWDM",
+        "cable": "CABLE",
+        "fiber": 4,
+        "natt": 0.12,
+        "matt": 0.15,
+        "att": 0.13,
+        "event": 20,
+        "alarm": 40
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "DWDM",
+        "cable": "CABLE",
+        "fiber": 6,
+        "natt": 0.12,
+        "matt": 0.15,
+        "att": 0.13,
+        "event": 20,
+        "alarm": 40
+    }
+]

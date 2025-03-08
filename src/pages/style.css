@@ -1,0 +1,46 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;  
+    height: 100vh; 
+    background: linear-gradient(51deg,
+     rgba(216,216,224,0.4) 0%,
+      rgba(178, 216, 246, 0.2) 15%,
+       rgba(56, 174, 238, 0.143) 100%), url('../../public/login.png');
+    background-color: transparent;
+    background-size: cover;    
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: -1; 
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form {
+    padding: 2em; 
+    position: relative;
+    z-index: 1;
+    border-radius: 16px !important;
+
+    /* Главное: полупрозрачность */
+    background: rgba(255, 255, 255, 0.15) !important;
+
+    /* Размытие фона */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Мягкая тень */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+
+    /* Полупрозрачная граница */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
