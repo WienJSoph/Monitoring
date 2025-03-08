@@ -1,17 +1,27 @@
 [
     {
-        "data": "",
-        "loc": "",
-        "place": ""
+        "data": "Rostelecom",
+        "loc": "DWDM",
+        "place": "3"
     },
     {
-        "data": "",
-        "loc": "",
-        "place": ""
+        "data": "Rostelecom",
+        "loc": "DWDM",
+        "place": "1"
     },
     {
-        "data": "",
+        "data": "Rostelecom",
+        "loc": "DWDM",
+        "place": "2"
+    },
+    {
+        "data": "Rostelecom",
         "loc": "",
-        "place": ""
+        "place": "8"
+    },
+    {
+        "data": "Rostelecom",
+        "loc": "DWDM",
+        "place": "6"
     }
 ]

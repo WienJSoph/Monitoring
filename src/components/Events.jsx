@@ -30,7 +30,7 @@ const Events = () => {
         <>
             <Header />
                 <Container maxWidth="xl" >
-                    <Typography variant="h5" sx={{mt: 3}}>События</Typography>
+                    <Typography variant="h5" sx={{mt: 3, mb: 3}}>События</Typography>
                     
                     <div className="container_event">
                         <>

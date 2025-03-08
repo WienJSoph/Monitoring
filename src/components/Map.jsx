@@ -21,27 +21,27 @@ const Map = () => {
     const locations = [
         {
             title: "Location 1",
-            description: "здесь что то напиши",
+            description: "Филармония.",
             coordinates: [55.021531, 82.924505],
         },
         {
             title: "Location 2",
-            description: "и здесь тоже",
+            description: "Сбербанк.",
             coordinates: [55.024563, 82.916845],
         },
         {
             title: "Location 3",
-            description: "и здесь",
+            description: "Отделение связи.",
             coordinates: [55.029423, 82.916191],
         },
         {
             title: "Location 4",
-            description: "и тут",
+            description: "Nebo fashion.",
             coordinates: [55.030627, 82.917888],
         },
         {
             title: "Location 5",
-            description: "описание",
+            description: "СибГУТИ. ",
             coordinates: [55.013384, 82.950994],
         },
     ];
