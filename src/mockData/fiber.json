@@ -1,57 +1,422 @@
 [
     {
         "vendor": "Rostelekom",
-        "system": "",
-        "cable": "CABLE",
-        "fiber": 8,
-        "natt": 0.14,
-        "matt": 0.18,
-        "att": 0.17,
-        "event": 18,
-        "alarm": 11
-    },
-    {
-        "vendor": "Rostelekom",
-        "system": "DWDM",
-        "cable": "CABLE",
-        "fiber": 3,
-        "natt": 0.11,
-        "matt": 0.11,
-        "att": 0.12,
-        "event": 3,
-        "alarm": 0
-    },
-    {
-        "vendor": "Rostelekom",
-        "system": "DWDM",
-        "cable": "CABLE",
-        "fiber": 1,
-        "natt": 0.12,
-        "matt": 0.14,
-        "att": 0.13,
-        "event": 6,
-        "alarm": 1
-    },
-    {
-        "vendor": "Rostelekom",
-        "system": "DWDM",
-        "cable": "CABLE",
+        "system": "T8",
+        "cable": "ОКК-Т-24А-2,7",
         "fiber": 4,
-        "natt": 0.13,
-        "matt": 0.16,
-        "att": 0.15,
-        "event": 12,
-        "alarm": 3
+        "maxatt": 0.30,
+        "att": 0.23,
+        "events": 1,
+        "alarms": 3
     },
     {
         "vendor": "Rostelekom",
-        "system": "DWDM",
-        "cable": "CABLE",
+        "system": "T8",
+        "cable": "ОКК-Т-24А-2,7",
+        "fiber": 5,
+        "maxatt": 0.30,
+        "att": 0.22,
+        "events": 8,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКК-Т-24А-2,7",
         "fiber": 6,
-        "natt": 0.12,
-        "matt": 0.16,
-        "att": 0.14,
-        "event": 9,
-        "alarm": 0
+        "maxatt": 0.30,
+        "att": 0.28,
+        "events": 4,
+        "alarms": 6
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКК-Т-24А-2,7",
+        "fiber": 9,
+        "maxatt": 0.30,
+        "att": 0.32,
+        "events": 24,
+        "alarms": 8
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКК-Т-24А-2,7",
+        "fiber": 10,
+        "maxatt": 0.30,
+        "att": 0.27,
+        "events": 4,
+        "alarms": 4
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКК-Т-24А-2,7",
+        "fiber": 11,
+        "maxatt": 0.30,
+        "att": 0.33,
+        "events": 18,
+        "alarms": 13
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКК-Т-24А-2,7",
+        "fiber": 13,
+        "maxatt": 0.30,
+        "att": 0.29,
+        "events": 8,
+        "alarms": 10
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКГ-48 G.652D (4х12) 7 кН",
+        "fiber": 35,
+        "maxatt": 0.22,
+        "att": 0.23,
+        "events": 2,
+        "alarms": 6
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКГ-48 G.652D (4х12) 7 кН",
+        "fiber": 36,
+        "maxatt": 0.22,
+        "att": 0.20,
+        "events": 1,
+        "alarms": 0
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКГ-48 G.652D (4х12) 7 кН",
+        "fiber": 37,
+        "maxatt": 0.22,
+        "att": 0.21,
+        "events": 4,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКГ-48 G.652D (4х12) 7 кН",
+        "fiber": 38,
+        "maxatt": 0.22,
+        "att": 0.20,
+        "events": 0,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКГ-48 G.652D (4х12) 7 кН",
+        "fiber": 39,
+        "maxatt": 0.22,
+        "att": 0.22,
+        "events": 5,
+        "alarms": 3
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКГ-48 G.652D (4х12) 7 кН",
+        "fiber": 40,
+        "maxatt": 0.22,
+        "att": 0.26,
+        "events": 10,
+        "alarms": 7
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКГ-48 G.652D (4х12) 7 кН",
+        "fiber": 41,
+        "maxatt": 0.22,
+        "att": 0.25,
+        "events": 13,
+        "alarms": 6
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКГ-48 G.652D (4х12) 7 кН",
+        "fiber": 42,
+        "maxatt": 0.22,
+        "att": 0.21,
+        "events": 1,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКГ-48 G.652D (4х12) 7 кН",
+        "fiber": 45,
+        "maxatt": 0.22,
+        "att": 0.29,
+        "events": 19,
+        "alarms": 13
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОГД-4х8А-7 кН",
+        "fiber": 18,
+        "maxatt": 0.26,
+        "att": 0.27,
+        "events": 6,
+        "alarms": 4
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОГД-4х8А-7 кН",
+        "fiber": 19,
+        "maxatt": 0.26,
+        "att": 0.31,
+        "events": 21,
+        "alarms": 5
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОГД-4х8А-7 кН",
+        "fiber": 24,
+        "maxatt": 0.26,
+        "att": 0.22,
+        "events": 4,
+        "alarms": 2
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОГД-4х8А-7 кН",
+        "fiber": 26,
+        "maxatt": 0.26,
+        "att": 0.24,
+        "events": 7,
+        "alarms": 3
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОГД-4х8А-7 кН",
+        "fiber": 27,
+        "maxatt": 0.26,
+        "att": 0.23,
+        "events": 6,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОГД-4х8А-7 кН",
+        "fiber": 29,
+        "maxatt": 0.26,
+        "att": 0.22,
+        "events": 9,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОГД-4х8А-7 кН",
+        "fiber": 31,
+        "maxatt": 0.26,
+        "att": 0.28,
+        "events": 2,
+        "alarms": 5
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ИКСЛ-М4П-А24-2.7 кН",
+        "fiber": 3,
+        "maxatt": 0.24,
+        "att": 0.25,
+        "events": 0,
+        "alarms": 2
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ИКСЛ-М4П-А24-2.7 кН",
+        "fiber": 5,
+        "maxatt": 0.24,
+        "att": 0.23,
+        "events": 1,
+        "alarms": 0
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ИКСЛ-М4П-А24-2.7 кН",
+        "fiber": 17,
+        "maxatt": 0.24,
+        "att": 0.22,
+        "events": 3,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "СЛ-ОКМБ-02НУ-16Е7(200)",
+        "fiber": 9,
+        "maxatt": 0.24,
+        "att": 0.26,
+        "events": 8,
+        "alarms": 3
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "СЛ-ОКМБ-02НУ-16Е7(200)",
+        "fiber": 14,
+        "maxatt": 0.24,
+        "att": 0.29,
+        "events": 6,
+        "alarms": 8
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКДН-8х4А-2,7 кН",
+        "fiber": 22,
+        "maxatt": 0.22,
+        "att": 0.25,
+        "events": 9,
+        "alarms": 7
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКМБ 03нг(А)-FRLSLTx-16А-9.0 кН",
+        "fiber": 1,
+        "maxatt": 0.22,
+        "att": 0.24,
+        "events": 13,
+        "alarms": 4
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКМБ 03нг(А)-FRLSLTx-16А-9.0 кН",
+        "fiber": 2,
+        "maxatt": 0.22,
+        "att": 0.20,
+        "events": 5,
+        "alarms": 2
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКМБ 03нг(А)-FRLSLTx-16А-9.0 кН",
+        "fiber": 8,
+        "maxatt": 0.22,
+        "att": 0.22,
+        "events": 2,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОГДН-4х4А-7 кН",
+        "fiber": 8,
+        "maxatt": 0.23,
+        "att": 0.21,
+        "events": 3,
+        "alarms": 0
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОГДН-4х4А-7 кН",
+        "fiber": 11,
+        "maxatt": 0.23,
+        "att": 0.27,
+        "events": 19,
+        "alarms": 16
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ИКСЛнг(A)-HF-Т-А16-2.7 к",
+        "fiber": 1,
+        "maxatt": 0.22,
+        "att": 0.21,
+        "events": 18,
+        "alarms": 4
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ИКСЛнг(A)-HF-Т-А16-2.7 к",
+        "fiber": 9,
+        "maxatt": 0.22,
+        "att": 0.23,
+        "events": 4,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ИКСЛнг(A)-HF-Т-А16-2.7 к",
+        "fiber": 13,
+        "maxatt": 0.22,
+        "att": 0.22,
+        "events": 9,
+        "alarms": 4
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ИКСЛнг(A)-HF-Т-А16-2.7 к",
+        "fiber": 15,
+        "maxatt": 0.22,
+        "att": 0.21,
+        "events": 21,
+        "alarms": 1
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ИКСЛнг(A)-HF-Т-А16-2.7 к",
+        "fiber": 16,
+        "maxatt": 0.22,
+        "att": 0.22,
+        "events": 3,
+        "alarms": 0
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКЛМ-0,22-24п",
+        "fiber": 4,
+        "maxatt": 0.21,
+        "att": 0.21,
+        "events": 6,
+        "alarms": 3
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКЛМ-0,22-24п",
+        "fiber": 17,
+        "maxatt": 0.21,
+        "att": 0.20,
+        "events": 7,
+        "alarms": 2
+    },
+    {
+        "vendor": "Rostelekom",
+        "system": "T8",
+        "cable": "ОКЛМ-0,22-24п",
+        "fiber": 23,
+        "maxatt": 0.21,
+        "att": 0.23,
+        "events": 3,
+        "alarms": 8
     }
 ]

@@ -1,35 +1,35 @@
 [
     {
-        "data": "Rostelecom",
-        "loc": "DWDM",
+        "operator": "Rostelecom",
+        "system": "DWDM",
         "place": "TS-10-2",
         "level": "major",
         "dsc": "Повышение температуры"
     },
     {
-        "data": "Rostelecom",
-        "loc": "DWDM",
+        "operator": "Rostelecom",
+        "system": "DWDM",
         "place": "MS-2S-21E",
         "level": "major",
         "dsc": "Придумать!!!!"
     },
     {
-        "data": "Rostelecom",
-        "loc": "DWDM",
+        "operator": "Rostelecom",
+        "system": "DWDM",
         "place": "2",
         "level": "major",
         "dsc": "Придумать!!!!"
     },
     {
-        "data": "Rostelecom",
-        "loc": "DWDM",
+        "operator": "Rostelecom",
+        "system": "DWDM",
         "place": "TQ-3FS",
         "level": "minor",
         "dsc": "Придумать!!!!"
     },
     {
-        "data": "Rostelecom",
-        "loc": "DWDM T8",
+        "operator": "Rostelecom",
+        "system": "DWDM T8",
         "place": "MD-D3ES-S3/D1",
         "level": "minor",
         "dsc": "Придумать!!!!"

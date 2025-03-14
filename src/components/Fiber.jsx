@@ -15,7 +15,7 @@ import fiber from '../mockData/fiber.json'
 import Header from "../pages/Header";
 const FiberPage = () => {
 
-    const fiberHead = ["оператор", "система", "кабель", "волокно", "н.затухание", "макс.затухание", "тек.затухание", "событие", "аварии"]; 
+    const fiberHead = ["Оператор", "Система", "Кабель", "Волокно", "Макс. зат. [дБ/км]", "Тек. зат. [дБ/км]", "Cобытия", "Аварии"]; 
 
     return (
         <>
@@ -53,11 +53,10 @@ const FiberPage = () => {
                                                     {p.fiber}
                                                 </Fab>
                                                 </TableCell>
-                                            <TableCell>{p.natt}</TableCell>
-                                            <TableCell>{p.matt}</TableCell>
+                                            <TableCell>{p.maxatt}</TableCell>
                                             <TableCell>{p.att}</TableCell>
-                                            <TableCell>{p.event}</TableCell>
-                                            <TableCell>{p.alarm}</TableCell></TableRow>
+                                            <TableCell>{p.events}</TableCell>
+                                            <TableCell>{p.alarms}</TableCell></TableRow>
                                     ))}
                                 </TableBody>
                             </Table>
