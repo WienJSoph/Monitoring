@@ -1,37 +1,149 @@
 [
     {
-        "operator": "Rostelecom",
-        "system": "DWDM",
+        "operator": "Ростелеком",
+        "system": "Т8",
         "place": "TS-10-2",
         "level": "major",
-        "dsc": "Повышение температуры"
+        "dsc": "Повышение температуры модуля"
     },
     {
-        "operator": "Rostelecom",
-        "system": "DWDM",
+        "operator": "МТС",
+        "system": "Т8",
         "place": "MS-2S-21E",
         "level": "major",
-        "dsc": "Придумать!!!!"
+        "dsc": "Предельное энергопотребление модуля"
     },
     {
-        "operator": "Rostelecom",
-        "system": "DWDM",
-        "place": "2",
+        "operator": "Вымпелком",
+        "system": "Huawei",
+        "place": "OptiX OSN 8800",
         "level": "major",
-        "dsc": "Придумать!!!!"
+        "dsc": "Неусточивое соединение с волокном"
     },
     {
-        "operator": "Rostelecom",
-        "system": "DWDM",
-        "place": "TQ-3FS",
+        "operator": "Новотелеком",
+        "system": "ADVA Optical Networking",
+        "place": "FSP 3000",
         "level": "minor",
-        "dsc": "Придумать!!!!"
+        "dsc": "Отсутствие сигнализации"
     },
     {
-        "operator": "Rostelecom",
-        "system": "DWDM T8",
+        "operator": "Мегафон",
+        "system": "Т8",
         "place": "MD-D3ES-S3/D1",
         "level": "minor",
-        "dsc": "Придумать!!!!"
+        "dsc": "Отсутствие резервного электропитания"
+    },
+    {
+        "operator": "Новотелеком",
+        "system": "ADVA Optical Networking",
+        "place": "FSP 3000",
+        "level": "major",
+        "dsc": "Предельное повышение температуры модуля"
+    },
+    {
+        "operator": "МТС",
+        "system": "Cisco",
+        "place": "ONS 15216",
+        "level": "minor",
+        "dsc": "Слабое колебание входного затухания"
+    },
+    {
+        "operator": "Ростелеком",
+        "system": "Т8",
+        "place": "MS-DC10EP-Q3F/O1",
+        "level": "minor",
+        "dsc": "Слабое повышение температуры"
+    },
+    {
+        "operator": "Центр-Информ",
+        "system": "Huawei",
+        "place": "OptiX OSN 9800",
+        "level": "major",
+        "dsc": "Отсутствие основного электропитания"
+    },
+    {
+        "operator": "Ростелеком",
+        "system": "Т8",
+        "place": "M1200-2-12Q",
+        "level": "minor",
+        "dsc": "Отсутствие резевного волокна"
+    },
+    {
+        "operator": "Ростелеком",
+        "system": "Cisco",
+        "place": "ONS 15216",
+        "level": "major",
+        "dsc": "Аварийное отключение модуля"
+    },
+    {
+        "operator": "СибТелКо",
+        "system": "Huawei",
+        "place": "OptiX OSN 1800",
+        "level": "major",
+        "dsc": "Повышение температуры модуля"
+    },
+    {
+        "operator": "МТС",
+        "system": "Т8",
+        "place": "MS-D100EC2-DT10",
+        "level": "major",
+        "dsc": "Отсутствие основного электропитания"
+    },
+    {
+        "operator": "ТТК",
+        "system": "Cisco",
+        "place": "ONS 15216",
+        "level": "minor",
+        "dsc": "Отсутствие резервной платы"
+    },
+    {
+        "operator": "Ростелеком",
+        "system": "Cisco",
+        "place": "ONS 15216",
+        "level": "minor",
+        "dsc": "Отсутствие сигнализации"
+    },
+    {
+        "operator": "Сибсети",
+        "system": "Juniper",
+        "place": "BTI7800",
+        "level": "minor",
+        "dsc": "Отсутствие резервного электропитания"
+    },
+    {
+        "operator": "Сибсети",
+        "system": "Juniper",
+        "place": "BTI7800",
+        "level": "minor",
+        "dsc": "Слабое повышение температуры"
+    },
+    {
+        "operator": "Ростелеком",
+        "system": "Т8",
+        "place": "MD200-2C2-4Q",
+        "level": "major",
+        "dsc": "Предельное энергопотребление модуля"
+    },
+    {
+        "operator": "Ростелеком",
+        "system": "Huawei",
+        "place": "OptiXtrans E9624X",
+        "level": "minor",
+        "dsc": "Отсутствие резевного волокна"
+    },
+    {
+        "operator": "Ростелеком",
+        "system": "Huawei",
+        "place": "OptiXtrans DC908",
+        "level": "major",
+        "dsc": "Аварийное отключение модуля"
+    },
+    {
+        "operator": "ТТК",
+        "system": "Juniper",
+        "place": "BTI7060",
+        "level": "minor",
+        "dsc": "Отсутствие резевного волокна"
     }
 ]

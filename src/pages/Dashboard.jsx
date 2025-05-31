@@ -8,6 +8,7 @@ import Header from "./Header";
 
 import BarCharts from "../components/UI/Charts/BarCharts";
 import ColCharts from "../components/UI/Charts/ColCharts";
+import { Margin } from "@mui/icons-material";
 
 
 const Dashboard = () => {
@@ -16,18 +17,18 @@ const Dashboard = () => {
     const cards = [
         {
             id: 1,
-            title: 'Plants',
-            description: 'Plants are essential for all life.',
+            title: 'Карта покрытия',
+            description: 'Расположение сетевых узлов на географической карте',
         },
         {
             id: 2,
-            title: 'Animals',
-            description: 'Animals are a part of nature.',
+            title: 'Волокна',
+            description: 'Мониторинг затухание в волокнах',
         },
         {
             id: 3,
-            title: 'Humans',
-            description: 'Humans depend on plants and animals for survival.',
+            title: 'Статистика',
+            description: 'Мониторинг событий',
         },
     ];
 
@@ -71,8 +72,11 @@ const Dashboard = () => {
 
                 </Box>
             </Container>
+
             <Container sx={{ mt: 3, display: 'flex', flex: 'column', justifyContent: 'space-between' }}>
                 <Card sx={{ height: '300px', width: '550px', p: 2 }}>
+                    <text>Статистика событий</text>
+                    <pre></pre>
                     <ColCharts />
                 </Card>
                 <Card sx={{ height: '300px', width: '500px', p: 2 }}>

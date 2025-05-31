@@ -1,0 +1,18 @@
+.textGray {
+    color: gray;
+    font-style: italic;
+    font-size: 11px;
+}
+
+.header {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.textRed {
+    color: red;
+}
+
+.textBlue {
+    color: rgb(70, 88, 151);
+}
