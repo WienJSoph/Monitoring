@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import Header from "./Header";
+import { useNavigate } from "react-router-dom";
 
 import BarCharts from "../components/UI/Charts/BarCharts";
 import ColCharts from "../components/UI/Charts/ColCharts";
@@ -13,21 +14,24 @@ import { Margin } from "@mui/icons-material";
 
 const Dashboard = () => {
     const { user, logout } = useAuth();
+    const navigate = useNavigate();
 
     const cards = [
         {
             id: 1,
-            link: 'название страницы для быстрого перехода',
+            link: "map",
             title: 'Карта покрытия',
             description: 'Расположение сетевых узлов на географической карте',
         },
         {
             id: 2,
+            link: "fiber",
             title: 'Волокна',
-            description: 'Мониторинг затухание в волокнах',
+            description: 'Мониторинг затухания в волокнах',
         },
         {
             id: 3,
+            link: "events",
             title: 'Статистика',
             description: 'Мониторинг событий',
         },
@@ -36,9 +40,9 @@ const Dashboard = () => {
     return (
         <>
             <Header />
-            {/* замени на тайпографи и смотри чтобы он не приклеился слева к экрану */}
-            <h2>Добро пожаловать, {user?.username}!</h2>
             <Container >
+                
+                <Typography variant="h5">Добро пожаловать, {user?.username}!</Typography>
                 <Box
                     sx={{
                         width: '100%',
@@ -48,7 +52,7 @@ const Dashboard = () => {
                     }}
                 >
                     {cards.map((card, index) => (
-                        <Card onClick={() => {console.log('сюда прокинуть navigate')}} >
+                        <Card onClick={() => navigate("/"+card.link)} >
                             <CardActionArea
                                 sx={{
                                     height: '100%',
