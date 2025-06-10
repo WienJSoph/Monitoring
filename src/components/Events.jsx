@@ -62,8 +62,8 @@ const Events = () => {
     return (
         <>
             <Header />
-                <Container maxWidth="xl" >
-                    <Box sx={{ bgcolor: 'background.paper', width: 1500}}>
+
+                    <Box sx={{ bgcolor: 'background.paper'}}>
                     <AppBar position="static">
                         <Tabs
                         value={value}
@@ -73,7 +73,7 @@ const Events = () => {
                         width="50%"
                         centered
                         >
-                        <Tab label="Аварии" {...a11yProps(0)} width="50%" />
+                        <Tab label="Аварии" {...a11yProps(0)} />
                         <Tab label="Предупреждения" {...a11yProps(1)} />
                         <Tab label="Замечания" {...a11yProps(2)} />
                         </Tabs>
@@ -91,7 +91,7 @@ const Events = () => {
                     <div style={{ height: '50px' }}>
                         
                     </div>
-                </Container>
+
         </>
     );
 };

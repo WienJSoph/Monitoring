@@ -18,7 +18,7 @@ const Sidebar = ({open, toggleDrawer}) => {
         { text: "Главная", icon: <DashboardOutlined />, path: "/dashboard" },
         { text: "Карта покрытия", icon: <MapIcon />, path: "/map" },
         { text: "Волокна", icon: <FiberSmartRecordIcon />, path: "/fiber" },
-        { text: "Операторы", icon: <SupervisedUserCircleIcon />, path: "/operators" },
+        // { text: "Операторы", icon: <SupervisedUserCircleIcon />, path: "/operators" },
         { text: "Статистика", icon: <StackedLineChartIcon />, path: "/events" },
     ];
 

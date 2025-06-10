@@ -85,10 +85,8 @@ const Map = () => {
     return (
         <>
             <Header />
-            <Container maxWidth="xl">
-                <Typography variant="h5" sx={{ mt: 3 }}>Карта покрытия</Typography>
-
-                <MapContainer center={position} zoom={13} style={{ height: "100vh", width: "100%" }}>
+            
+                <MapContainer center={position} zoom={13} style={{ height: "90vh", width: "100%" }}>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
                     {nodes.map((node, index) => (
@@ -116,7 +114,7 @@ const Map = () => {
                     ))}
                 </MapContainer>
 
-            </Container>
+            
         </>
     );
 };

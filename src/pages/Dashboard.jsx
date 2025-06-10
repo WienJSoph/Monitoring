@@ -17,6 +17,7 @@ const Dashboard = () => {
     const cards = [
         {
             id: 1,
+            link: 'название страницы для быстрого перехода',
             title: 'Карта покрытия',
             description: 'Расположение сетевых узлов на географической карте',
         },
@@ -35,6 +36,7 @@ const Dashboard = () => {
     return (
         <>
             <Header />
+            {/* замени на тайпографи и смотри чтобы он не приклеился слева к экрану */}
             <h2>Добро пожаловать, {user?.username}!</h2>
             <Container >
                 <Box
@@ -46,7 +48,7 @@ const Dashboard = () => {
                     }}
                 >
                     {cards.map((card, index) => (
-                        <Card>
+                        <Card onClick={() => {console.log('сюда прокинуть navigate')}} >
                             <CardActionArea
                                 sx={{
                                     height: '100%',
@@ -74,12 +76,12 @@ const Dashboard = () => {
             </Container>
 
             <Container sx={{ mt: 3, display: 'flex', flex: 'column', justifyContent: 'space-between' }}>
-                <Card sx={{ height: '300px', width: '550px', p: 2 }}>
+                <Card sx={{ height: '300px', width: '550px', p: 3 }}>
                     <text>Статистика событий</text>
                     <pre></pre>
                     <ColCharts />
                 </Card>
-                <Card sx={{ height: '300px', width: '500px', p: 2 }}>
+                <Card sx={{ height: '300px', width: '500px', p: 3 }}>
                     <BarCharts />
                 </Card>
             </Container>
