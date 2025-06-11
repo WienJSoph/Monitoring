@@ -11,6 +11,22 @@ import BarCharts from "../components/UI/Charts/BarCharts";
 import ColCharts from "../components/UI/Charts/ColCharts";
 import { Margin } from "@mui/icons-material";
 
+const CardItem = ({ title, description, link }) => {
+    const navigate = useNavigate();
+
+    return (
+      <Card onClick={() => navigate(`/${link}`)} sx={{ height: '100%' }}>
+        <CardActionArea sx={{ height: '100%' }}>
+          <CardContent>
+            <Typography variant="h5">{title}</Typography>
+            <Typography variant="body2" color="text.secondary">
+              {description}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    );
+  };
 
 const Dashboard = () => {
     const { user, logout } = useAuth();
@@ -40,58 +56,44 @@ const Dashboard = () => {
     return (
         <>
             <Header />
-            <Container >
-                
-                <Typography variant="h5">Добро пожаловать, {user?.username}!</Typography>
+            <Typography variant="h5" sx={{ mt: 3, ml: 4 }}>
+                Добро пожаловать, {user?.username}!
+            </Typography>
+            <Container>
+                <Box
+                    display="grid"
+                    gridTemplateColumns="repeat(auto-fill, minmax(300px, 1fr))"
+                    gap={2}
+                    width="100%"
+                >
+                    {cards.map((card, idx) => (
+                        <CardItem
+                            key={idx}
+                            title={card.title}
+                            description={card.description}
+                            link={card.link}
+                        />
+                    ))}
+                </Box>
                 <Box
                     sx={{
-                        width: '100%',
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fill, minmax(min(300px, 100%), 1fr))',
+                        display: 'flex',
+                        flexWrap: 'wrap',
                         gap: 2,
+                        mt: 5,
+                        justifyContent: 'space-between',
                     }}
                 >
-                    {cards.map((card, index) => (
-                        <Card onClick={() => navigate("/"+card.link)} >
-                            <CardActionArea
-                                sx={{
-                                    height: '100%',
-                                    '&[data-active]': {
-                                        backgroundColor: 'action.selected',
-                                        '&:hover': {
-                                            backgroundColor: 'action.selectedHover',
-                                        },
-                                    },
-                                }}
-                            >
-                                <CardContent sx={{ height: '100%' }}>
-                                    <Typography variant="h5" component="div">
-                                        {card.title}
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        {card.description}
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    ))}
-
+                    <Card sx={{ height: 300, width: 500, p: 3 }}>
+                        <Typography variant="h6" gutterBottom>
+                            Статистика событий
+                        </Typography>
+                        <ColCharts />
+                    </Card>
+                    <Card sx={{ height: 300, width: 500, p: 3 }}>
+                        <BarCharts />
+                    </Card>
                 </Box>
-            </Container>
-
-            <Container sx={{ mt: 3, display: 'flex', flex: 'column', justifyContent: 'space-between' }}>
-                <Card sx={{ height: '300px', width: '550px', p: 3 }}>
-                    <text>Статистика событий</text>
-                    <pre></pre>
-                    <ColCharts />
-                </Card>
-                <Card sx={{ height: '300px', width: '500px', p: 3 }}>
-                    <BarCharts />
-                </Card>
-            </Container>
-
-            <Container>
-
             </Container>
         </>
     );
